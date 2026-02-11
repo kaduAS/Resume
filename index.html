@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Eduardo - Software Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.3;
+            color: #000;
+            background: #f5f5f5;
+            font-size: 10.5pt;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            background: #fff;
+            padding: 0.75in;
+            min-height: 297mm;
+            position: relative;
+        }
+
+        @media print {
+            body {
+                background: #fff;
+            }
+            .container {
+                padding: 0.5in;
+                margin: 0;
+            }
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 8px;
+        }
+
+        .header h1 {
+            font-size: 20pt;
+            font-weight: bold;
+            margin-bottom: 4px;
+            letter-spacing: 1px;
+        }
+
+        .header .title {
+            font-size: 11pt;
+            margin-bottom: 6px;
+            font-weight: normal;
+        }
+
+        .contact {
+            font-size: 9.5pt;
+            line-height: 1.4;
+        }
+
+        .contact a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Headers */
+        .section {
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-size: 11pt;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 6px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 2px;
+        }
+
+        /* Summary */
+        .summary {
+            text-align: justify;
+            line-height: 1.4;
+        }
+
+        /* Skills */
+        .skills-grid {
+            line-height: 1.5;
+        }
+
+        .skill-category {
+            margin-bottom: 4px;
+        }
+
+        .skill-category strong {
+            font-weight: bold;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 10px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 2px;
+        }
+
+        .job-title-company {
+            font-weight: bold;
+            font-size: 10.5pt;
+        }
+
+        .job-date {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #333;
+        }
+
+        .job-position {
+            font-style: italic;
+            margin-bottom: 4px;
+            font-size: 10pt;
+        }
+
+        .job ul {
+            margin-left: 18px;
+            margin-top: 3px;
+        }
+
+        .job li {
+            margin-bottom: 3px;
+            line-height: 1.35;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 8px;
+        }
+
+        .project-header {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .project-header a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .project-description {
+            line-height: 1.4;
+        }
+
+        .project ul {
+            margin-left: 18px;
+            margin-top: 3px;
+        }
+
+        .project li {
+            margin-bottom: 3px;
+            line-height: 1.35;
+        }
+
+        /* Education */
+        .education-item {
+            margin-bottom: 6px;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .education-school {
+            font-weight: bold;
+        }
+
+        .education-date {
+            font-style: italic;
+            font-size: 9.5pt;
+            color: #333;
+        }
+
+        .education-degree {
+            font-size: 10pt;
+        }
+
+        /* Metrics highlighting */
+        strong.metric {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="resume-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>CARLOS EDUARDO</h1>
+            <div class="title">Software Engineer</div>
+            <div class="contact">
+                <a href="mailto:kadusilvaamaral@gmail.com">kadusilvaamaral@gmail.com</a> |
+                <a href="https://www.linkedin.com/in/carlos-eduardo-amaral-silva-65a0ba34a/" target="_blank">linkedin.com/in/Carlos Eduardo Amaral Silva</a> |
+                <a href="https://github.com/kaduAS" target="_blank">github.com/KaduAS</a> |
+            </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="section">
+            <div class="section-title">Professional Summary</div>
+            <div class="summary">
+               <p>  
+                Junior Software Engineer with focus on <strong>Backend development</strong>, currently studying <strong>Analysis and Systems Development (ADS)</strong> and building projects using <strong>Node.js</strong>, <strong>REST APIs</strong>, and <strong>PostgreSQL</strong>. Strong interest in <strong>automation</strong>, <strong>cloud-based systems</strong>, and continuous learning in a challenging environment.  
+                Founder and creator of <strong>RECYCLY</strong>, a personal project developed to practice backend concepts such as <strong>API development</strong>, <strong>data modeling</strong>, and <strong>business logic implementation</strong>, serving as a hands-on learning experience focused on real-world problems. Comfortable reading technical documentation, integrating external APIs, and collaborating through <strong>Git/GitHub</strong>. Outside of software development, I am <strong>fluent in English</strong>, able to communicate     effectively and read and understand technical documentation.  
+                </p>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="section">
+            <div class="section-title">Technical Skills</div>
+            <div class="skills-grid">
+               <div class="skill-category">
+<div class="skills-grid">
+
+  <div class="skill-category">
+    <strong>Backend:</strong>
+    JavaScript, TypeScript, Node.js (Express.js), REST APIs, Business logic, API development and consumption
+  </div>
+
+        <div class="skill-category">
+            <strong>Databases:</strong>
+             PostgreSQL (basic queries, initial data modeling), Prisma ORM, SQL fundamentals
+        </div>
+
+        <div class="skill-category">
+            <strong>Frontend (basic knowledge):</strong>
+             React, Next.js, API consumption, basic components
+        </div>
+
+        <div class="skill-category">
+            <strong>Cloud & Ops (foundational knowledge):</strong>
+            Cloud concepts, basic application deployment, environment variables, Git/GitHub
+        </div>
+
+        <div class="skill-category">
+            <strong>Automation & Processes:</strong>
+            Interest and learning in process automation, system integrations, and tooling
+        </div>
+
+        <div class="skill-category">
+            <strong>Best Practices:</strong>
+            Clean code concepts, organized codebase, Git version control, technical documentation reading
+        </div>
+
+        <div class="skill-category">
+            <strong>Currently Learning:</strong>
+            Advanced Node.js, PostgreSQL, basic testing, automation tools (e.g. n8n), cloud fundamentals
+        </div>
+
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="section">
+            <div class="section-title">Professional Experience</div>
+
+            <div class="job">
+                <div class="job-header">
+                    <div class="job-title-company">Recycly</div>
+                    <div class="job-date">November 2025 - Present</div>
+                </div>
+                <div class="job-position">Founder & Lead Engineer</div>
+                <ul>
+                    <li>
+                    <strong>Founder and creator</strong> of <strong>RECYCLY</strong>, a <strong>backend-focused application</strong> aimed at <strong>recycling management</strong> and <strong>environmental impact tracking</strong>
+                    </li>
+
+                    <li>
+                    Developing <strong>RESTful APIs</strong> using <strong>Node.js</strong> and <strong>JavaScript</strong> to manage <strong>users</strong>, <strong>collection points</strong>, and <strong>recycling records</strong>
+                    </li>
+
+                    <li>
+                    Designing and implementing <strong>relational database schemas</strong> with <strong>PostgreSQL</strong> for <strong>structured and consistent data storage</strong>
+                    </li>
+
+                    <li>
+                    Applying <strong>backend best practices</strong>, including <strong>API validation</strong>, <strong>error handling</strong>, and <strong>modular architecture</strong>
+                    </li>
+
+                    <li>
+                    Planning and documenting future features such as <strong>authentication</strong>, <strong>analytics</strong>, and <strong>system scalability</strong>
+                    </li>
+
+                </ul>
+            </div>
+
+        
+        </div>
+
+        <!-- Education & Languages -->
+        <div class="section">
+    <div class="section-title">Education & Languages</div>
+
+    <div class="education-item">
+        <strong>Associate Degree in Systems Analysis and Development (ADS)</strong><br>
+        UNOPAR (Universidade Norte do Paraná) — <em>In progress</em>
+    </div>
+
+    <div class="education-item" style="margin-top: 6px;">
+        <strong>English Language Studies</strong><br>
+        CET — Conversation-focused English Course
+    </div>
+
+    <div class="education-item" style="margin-top: 6px;">
+        <strong>Languages:</strong>
+        English (Advanced / Professional Working Proficiency), Portuguese (Native)
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
