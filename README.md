@@ -1,12 +1,15 @@
-# Carlos Eduardo – Currículo
+# 📄 Resume — Carlos Eduardo Amaral Silva
 
-Versão online: https://github.com/kaduAS/Resume.git
+Currículo pessoal desenvolvido em HTML, disponível para visualização e download.
 
-Este repositório contém meu currículo pessoal, desenvolvido como um site estático utilizando HTML e CSS.
+## Preview
 
-Desenvolvedor com foco em back-end, estudando JavaScript e fundamentos de sistemas, aberto a oportunidades remotas internacionais.
+![Resume](preview.png)
 
-## Contato
-- LinkedIn: https://www.linkedin.com/in/carlos-eduardo-amaral-silva-65a0ba34a/
-- GitHub: https://github.com/kaduAS
-- Email: kadusilvaamaral@gmail.com
+## 🔗 Links
+- 💼 [LinkedIn](https://linkedin.com/in/kaduas)
+- 🐙 [GitHub](https://github.com/kaduAS)
+- 📧 kadusilvaamaral@gmail.com
+
+## 🛠️ Stack
+Node.js · Express.js · PostgreSQL · Prisma ORM · JWT · JavaScript
