@@ -4,7 +4,7 @@ Currículo pessoal desenvolvido em HTML, disponível para visualização e downl
 
 ## Preview
 
-![Resume](preview.png)
+[Clique aqui para ver a screenshot](Screenshot%202026-03-15%20at%2002-15-42%20Carlos%20Eduardo%20-%20Software%20Engineer.png)
 
 ## 🔗 Links
 - 💼 [LinkedIn](https://linkedin.com/in/kaduas)
