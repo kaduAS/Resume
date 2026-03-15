@@ -1,367 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Eduardo - Software Engineer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Eduardo - Software Engineer</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.3;
-            color: #000;
-            background: #f5f5f5;
-            font-size: 10.5pt;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.3;
+      color: #000;
+      background: #f5f5f5;
+      font-size: 10.5pt;
+    }
 
-        .container {
-            max-width: 210mm;
-            margin: 0 auto;
-            background: #fff;
-            padding: 0.75in;
-            min-height: 297mm;
-            position: relative;
-        }
+    .container {
+      max-width: 210mm;
+      margin: 0 auto;
+      background: #fff;
+      padding: 0.75in;
+      min-height: 297mm;
+      position: relative;
+    }
 
-        @media print {
-            body {
-                background: #fff;
-            }
-            .container {
-                padding: 0.5in;
-                margin: 0;
-            }
-        }
+    @media print {
+      body { background: #fff; }
+      .container { padding: 0.5in; margin: 0; }
+    }
 
-        /* Header */
-        .header {
-            text-align: center;
-            margin-bottom: 16px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 8px;
-        }
+    /* Header */
+    .header {
+      text-align: center;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 8px;
+    }
 
-        .header h1 {
-            font-size: 20pt;
-            font-weight: bold;
-            margin-bottom: 4px;
-            letter-spacing: 1px;
-        }
+    .header h1 {
+      font-size: 20pt;
+      font-weight: bold;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
 
-        .header .title {
-            font-size: 11pt;
-            margin-bottom: 6px;
-            font-weight: normal;
-        }
+    .header .title {
+      font-size: 11pt;
+      margin-bottom: 6px;
+      font-weight: normal;
+    }
 
-        .contact {
-            font-size: 9.5pt;
-            line-height: 1.4;
-        }
+    .contact {
+      font-size: 9.5pt;
+      line-height: 1.6;
+    }
 
-        .contact a {
-            color: #000;
-            text-decoration: none;
-        }
+    .contact a {
+      color: #000;
+      text-decoration: none;
+    }
 
-        .contact a:hover {
-            text-decoration: underline;
-        }
+    .contact a:hover { text-decoration: underline; }
 
-        /* Section Headers */
-        .section {
-            margin-bottom: 14px;
-        }
+    /* Section Headers */
+    .section { margin-bottom: 14px; }
 
-        .section-title {
-            font-size: 11pt;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 6px;
-            border-bottom: 1px solid #000;
-            padding-bottom: 2px;
-        }
+    .section-title {
+      font-size: 11pt;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      border-bottom: 1px solid #000;
+      padding-bottom: 2px;
+    }
 
-        /* Summary */
-        .summary {
-            text-align: justify;
-            line-height: 1.4;
-        }
+    /* Summary */
+    .summary {
+      text-align: justify;
+      line-height: 1.45;
+    }
 
-        /* Skills */
-        .skills-grid {
-            line-height: 1.5;
-        }
+    /* Skills */
+    .skills-grid { line-height: 1.55; }
 
-        .skill-category {
-            margin-bottom: 4px;
-        }
+    .skill-category { margin-bottom: 4px; }
+    .skill-category strong { font-weight: bold; }
 
-        .skill-category strong {
-            font-weight: bold;
-        }
+    /* Projects */
+    .project { margin-bottom: 10px; }
 
-        /* Experience */
-        .job {
-            margin-bottom: 10px;
-        }
+    .project-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
 
-        .job-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
-        }
+    .project-title { font-weight: bold; font-size: 10.5pt; }
 
-        .job-title-company {
-            font-weight: bold;
-            font-size: 10.5pt;
-        }
+    .project-title a {
+      color: #000;
+      text-decoration: none;
+    }
 
-        .job-date {
-            font-style: italic;
-            font-size: 9.5pt;
-            color: #333;
-        }
+    .project-title a:hover { text-decoration: underline; }
 
-        .job-position {
-            font-style: italic;
-            margin-bottom: 4px;
-            font-size: 10pt;
-        }
+    .project-date {
+      font-style: italic;
+      font-size: 9.5pt;
+      color: #333;
+    }
 
-        .job ul {
-            margin-left: 18px;
-            margin-top: 3px;
-        }
+    .project-sub {
+      font-style: italic;
+      margin-bottom: 4px;
+      font-size: 10pt;
+    }
 
-        .job li {
-            margin-bottom: 3px;
-            line-height: 1.35;
-        }
+    .project ul { margin-left: 18px; margin-top: 3px; }
+    .project li { margin-bottom: 3px; line-height: 1.35; }
 
-        /* Projects */
-        .project {
-            margin-bottom: 8px;
-        }
-
-        .project-header {
-            font-weight: bold;
-            margin-bottom: 3px;
-        }
-
-        .project-header a {
-            color: #000;
-            text-decoration: none;
-        }
-
-        .project-description {
-            line-height: 1.4;
-        }
-
-        .project ul {
-            margin-left: 18px;
-            margin-top: 3px;
-        }
-
-        .project li {
-            margin-bottom: 3px;
-            line-height: 1.35;
-        }
-
-        /* Education */
-        .education-item {
-            margin-bottom: 6px;
-        }
-
-        .education-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: baseline;
-        }
-
-        .education-school {
-            font-weight: bold;
-        }
-
-        .education-date {
-            font-style: italic;
-            font-size: 9.5pt;
-            color: #333;
-        }
-
-        .education-degree {
-            font-size: 10pt;
-        }
-
-        /* Metrics highlighting */
-        strong.metric {
-            font-weight: bold;
-        }
-    </style>
+    /* Education */
+    .education-item { margin-bottom: 6px; }
+  </style>
 </head>
 <body>
-    <div class="container" id="resume-container">
-        <!-- Header -->
-        <div class="header">
-            <h1>CARLOS EDUARDO</h1>
-            <div class="title">Software Engineer</div>
-            <div class="contact">
-                <a href="mailto:kadusilvaamaral@gmail.com">kadusilvaamaral@gmail.com</a> |
-                <a href="https://www.linkedin.com/in/carlos-eduardo-amaral-silva-65a0ba34a/" target="_blank">linkedin.com/in/Carlos Eduardo Amaral Silva</a> |
-                <a href="https://github.com/kaduAS" target="_blank">github.com/KaduAS</a> |
-            </div>
-        </div>
+<div class="container">
 
-        <!-- Professional Summary -->
-        <div class="section">
-            <div class="section-title">Resumo Profissional</div>
-            <div class="summary">
-                <p>  
-                Engenheiro de Software Júnior com foco em <strong>desenvolvimento back-end</strong>, atualmente cursando <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong> e desenvolvendo projetos utilizando <strong>Node.js</strong>, <strong>APIs REST</strong> e <strong>PostgreSQL</strong>. Forte interesse em <strong>automação</strong>, <strong>sistemas baseados em cloud</strong> e aprendizado contínuo em ambientes desafiadores.
-                Fundador e criador do <strong>RECYCLY</strong>, um projeto pessoal desenvolvido para praticar conceitos de back-end como <strong>desenvolvimento de APIs</strong>, <strong>modelagem de dados</strong> e <strong>implementação de lógica de negócio</strong>, servindo como uma experiência prática focada em problemas do mundo real. Possuo facilidade na leitura de documentação técnica, integração de APIs externas e colaboração por meio do <strong>Git/GitHub</strong>. Além do desenvolvimento de software, sou <strong>fluente em inglês</strong>, com capacidade de comunicação eficaz e compreensão de documentação técnica. 
-                </p>
-            </div>
-        </div>
-
-        <!-- Technical Skills -->
-        <div class="section">
-            <div class="section-title">Skills</div>
-            <div class="skills-grid">
-               <div class="skill-category">
-<div class="skills-grid">
-
-  <div class="skill-category">
-    <strong>Backend:</strong>
-    JavaScript, TypeScript, Node.js (Express.js), APIs REST, lógica de negócio, desenvolvimento e consumo de APIs
+  <!-- Header -->
+  <div class="header">
+    <h1>CARLOS EDUARDO</h1>
+    <div class="title">Junior Software Engineer</div>
+    <div class="contact">
+      <a href="mailto:kadusilvaamaral@gmail.com" target="_blank" rel="noopener">kadusilvaamaral@gmail.com</a> |
+      <a href="https://wa.me/5574998145717" target="_blank" rel="noopener">(74) 99814-5717</a> |
+      <a href="https://github.com/kaduAS" target="_blank" rel="noopener">github.com/kaduAS</a> |
+      <a href="https://www.linkedin.com/in/kaduas" target="_blank" rel="noopener">linkedin.com/in/kaduas</a>
+    </div>
   </div>
 
-        <div class="skill-category">
-            <strong>Databases:</strong>
-             PostgreSQL (consultas básicas, modelagem de dados), Prisma ORM, fundamentos de SQL
+  <!-- Professional Summary -->
+  <div class="section">
+    <div class="section-title">Resumo Profissional</div>
+    <div class="summary">
+      Engenheiro de Software Junior com foco em <strong>desenvolvimento back-end</strong>, cursando <strong>Análise e Desenvolvimento de Sistemas (ADS)</strong>. Desenvolve e entrega <strong>APIs RESTful</strong> utilizando <strong>Node.js, Express.js e PostgreSQL</strong> — aplicando <strong>autenticação JWT</strong>, <strong>arquitetura modular</strong> e <strong>Prisma ORM</strong> em projetos reais publicados no GitHub. Hábitos sólidos de <strong>código limpo</strong>, <strong>versionamento com Git</strong> e leitura fluente de documentação técnica em inglês. Utiliza ferramentas de <strong>IA como GitHub Copilot e Claude</strong> para acelerar desenvolvimento, debug e documentação. Disponível para <strong>trabalho remoto</strong> e motivado para contribuir em equipe e crescer dentro de sistemas em produção desde o primeiro dia.
+    </div>
+  </div>
+
+  <!-- Technical Skills -->
+  <div class="section">
+    <div class="section-title">Habilidades Técnicas</div>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <strong>Back-End:</strong> Node.js, Express.js, JavaScript, TypeScript (básico), APIs RESTful, autenticação JWT, bcrypt, nanoid, lógica de negócio, desenvolvimento e consumo de APIs
+      </div>
+
+      <div class="skill-category">
+        <strong>Banco de Dados:</strong> PostgreSQL, Prisma ORM, modelagem relacional, SQL (consultas, joins, constraints, integridade referencial)
+      </div>
+
+      <div class="skill-category">
+        <strong>Front-End (básico):</strong> React, Next.js, consumo de APIs, estrutura de componentes
+      </div>
+
+      <div class="skill-category">
+        <strong>Ferramentas &amp; Gestão:</strong> Git, GitHub, Trello, variáveis de ambiente (.env), conceitos básicos de deploy, controle de versão
+      </div>
+
+      <div class="skill-category">
+        <strong>IA &amp; Produtividade:</strong> GitHub Copilot, Claude (Anthropic), ChatGPT, Cursor — uso para acelerar desenvolvimento, debug, revisão de código e geração de documentação
+      </div>
+
+      <div class="skill-category">
+        <strong>Boas Práticas:</strong> Código limpo, arquitetura modular, tratamento centralizado de erros, validação de APIs, separação de responsabilidades (routes/controllers/middlewares)
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <div class="section">
+    <div class="section-title">Projetos</div>
+
+    <!-- URL Shortener -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-title">
+          <a href="https://github.com/kaduAS/url-shortener-api" target="_blank" rel="noopener">URL Shortener API</a>
         </div>
+        <div class="project-date">Março 2026</div>
+      </div>
+      <div class="project-sub">Projeto pessoal — Node.js · Express · PostgreSQL · Prisma · JWT · nanoid</div>
+      <ul>
+        <li>Desenvolveu <strong>API REST completa</strong> para encurtamento de URLs com <strong>códigos personalizados</strong>, <strong>expiração de links</strong> e <strong>rastreamento de cliques</strong> com logs com timestamp armazenados no PostgreSQL</li>
+        <li>Implementou <strong>autenticação completa</strong> (cadastro e login) com <strong>JWT tokens</strong> e <strong>bcrypt</strong> via middleware reutilizável; suporte a usuários autenticados e anônimos</li>
+        <li>Modelou <strong>schema relacional</strong> com três entidades (<em>User</em>, <em>Url</em>, <em>ClickLog</em>) e endpoint de <strong>estatísticas por URL</strong> com total de cliques e histórico recente</li>
+        <li>Aplicou <strong>arquitetura modular</strong> com separação de rotas, controllers e <strong>middleware centralizado de erros</strong></li>
+      </ul>
+    </div>
 
-        <div class="skill-category">
-            <strong>Frontend (conhecimento básico):</strong>
-             React, Next.js, consumo de API, componentes básicos
+    <!-- Task Management API -->
+    <div class="project">
+      <div class="project-header">
+        <div class="project-title">
+          <a href="https://github.com/kaduAS/task-management-api" target="_blank" rel="noopener">Task Management API</a>
         </div>
+        <div class="project-date">Fevereiro 2026</div>
+      </div>
+      <div class="project-sub">Projeto pessoal — Node.js · Express · PostgreSQL · Prisma · JWT</div>
+      <ul>
+        <li>Desenvolveu <strong>API RESTful completa</strong> com cadastro de usuários, <strong>autenticação JWT</strong> e <strong>CRUD de tarefas</strong> com gerenciamento de sessão</li>
+        <li>Projetou <strong>schema PostgreSQL</strong> via Prisma ORM com relacionamento usuário–tarefa, constraints e integridade referencial</li>
+        <li>Protegeu todos os endpoints com <strong>middleware de autenticação</strong>, garantindo que cada usuário acesse apenas seus próprios dados</li>
+        <li>Documentou o projeto com <strong>README detalhado, guia de deploy, instruções de setup e quick-reference</strong></li>
+      </ul>
+    </div>
 
-        <div class="skill-category">
-            <strong>Cloud & Ops:</strong>
-            Cloud concepts, basic application deployment, environment variables, Git/GitHub
-        </div>
+  </div>
 
-        <div class="skill-category">
-            <strong>Automação & Processos:</strong>
-            Interesse e aprendizado em automação de processos, integrações de sistemas e ferramentas
-        </div>
-
-        <div class="skill-category">
-            <strong>Boas práticas:</strong>
-            Conceitos de código limpo, base de código organizada, controle de versão com Git, leitura de documentação técnica
-        </div>
-
-        <div class="skill-category">
-            <strong>Atualmente estudando:</strong>
-            Node.js avançado, PostgreSQL, testes básicos, ferramentas de automação (ex.: n8n), fundamentos de cloud
-        </div>
-
-            </div>
-
-            </div>
-        </div>
-
-        <!-- Professional Experience -->
-        <div class="section">
-            <div class="section-title">Projetos</div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title-company">Recycly (Projeto Em Planejamento)</div>
-                    <div class="job-date">Janeiro 2026 - Inicio</div>
-                </div>
-                <div class="job-position">Projeto pessoal em fase de concepção</div>
-                <ul>
-                    <li>
-                    <strong>Fundador e criador</strong> do projeto/ideia da <strong>RECYCLY</strong>, uma <strong>aplicação com foco em back-end</strong> voltada para <strong>gestão de reciclagem</strong> e <strong>monitoramento de impacto ambiental</strong>
-                    </li>
-
-                    <li>
-                    Desenvolvimento de <strong>APIs RESTful</strong> utilizando <strong>Node.js</strong> e <strong>JavaScript</strong> para gerenciamento de <strong>usuários</strong>, <strong>pontos de coleta</strong> e <strong>registros de reciclagem</strong>
-                    </li>
-
-                    <li>
-                    Criação e implementação de <strong>schemas de banco de dados relacionais</strong> com <strong>PostgreSQL</strong>, garantindo <strong>armazenamento de dados estruturado e consistente</strong>
-                    </li>
-
-                    <li>
-                    Aplicação de <strong>boas práticas de back-end</strong>, incluindo <strong>validação de APIs</strong>, <strong>tratamento de erros</strong> e <strong>arquitetura modular</strong>
-                    </li>
-
-                    <li>
-                    Planejamento e documentação de funcionalidades futuras, como <strong>autenticação</strong>, <strong>analytics</strong> e <strong>escalabilidade do sistema</strong>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <div class="job-title-company">Task Management API</div>
-                    <div class="job-date">Fevereiro - 2026</div>
-                </div>
-                <div class="job-position">Projeto pessoal - Backend API</div>
-                <ul>
-                    <li>
-                    Desenvolvido <strong>API RESTful completa</strong> para <strong>gerenciamento de tarefas pessoais</strong> utilizando <strong>Node.js</strong>, <strong>Express.js</strong> e <strong>JavaScript</strong>
-                    </li>
-
-                    <li>
-                    Implementação de <strong>autenticação segura</strong> com <strong>JWT tokens</strong> para proteger endpoints
-                    </li>
-
-                    <li>
-                    Design e modelagem de banco de dados com <strong>PostgreSQL</strong> e <strong>Prisma ORM</strong> para gerenciar <strong>usuários</strong>, <strong>tarefas</strong> e <strong>relacionamentos</strong>
-                    </li>
-
-                    <li>
-                    Funcionalidades principais: <strong>registro de usuários</strong>, <strong>autenticação</strong>, <strong>CRUD de tarefas</strong> e <strong>gerenciamento de sessão</strong>
-                    </li>
-
-                    <li>
-                    Aplicação de <strong>princípios de código limpo</strong> e <strong>arquitetura modular</strong> para garantir <strong>manutenibilidade</strong> e <strong>escalabilidade</strong>
-                    </li>
-                </ul>
-            </div>
-
-        
-        </div>
-
-        <!-- Education & Languages -->
-        <div class="section">
-    <div class="section-title">Formação & Idiomas</div>
+  <!-- Education & Languages -->
+  <div class="section">
+    <div class="section-title">Formação &amp; Idiomas</div>
 
     <div class="education-item">
-        <strong>Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)</strong><br>
-        UNOPAR (Universidade Norte do Paraná) — <em>Em andamento</em>
+      <strong>Tecnologia em Análise e Desenvolvimento de Sistemas (ADS)</strong> | UNOPAR – Universidade Norte do Paraná | Em andamento
     </div>
 
-    <div class="education-item" style="margin-top: 6px;">
-        <strong>Estudos da Língua Inglesa</strong><br>
-        CET — Curso de Inglês com foco em conversação
+    <div class="education-item">
+      <strong>Inglês — Conversação e Leitura Técnica</strong> | CET – Curso de Inglês | Concluído
     </div>
 
-    <div class="education-item" style="margin-top: 6px;">
-        <strong>Idiomas:</strong>
-        Inglês (Avançado / Proficiência Profissional), Português (Nativo)
+    <div class="education-item">
+      <strong>Idiomas:</strong> Português (Nativo), Inglês (Avançado — documentação técnica e comunicação escrita profissional)
     </div>
+  </div>
+
 </div>
-
-    </div>
 </body>
 </html>
